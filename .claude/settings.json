@@ -1,0 +1,9 @@
+{
+  "permissions": {
+    "allow": [
+      "Bash(npm install *)",
+      "Bash(bun install *)",
+      "Bash(npm run *)"
+    ]
+  }
+}
