@@ -1,5 +1,4 @@
 {
-  "framework": null,
   "installCommand": "bun install",
   "buildCommand": "vite build"
 }
