@@ -1,5 +1,6 @@
 {
   "framework": null,
   "installCommand": "bun install",
-  "buildCommand": "vite build"
+  "buildCommand": "vite build",
+  "nodeVersion": "22.x"
 }
