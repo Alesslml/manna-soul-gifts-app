@@ -50,36 +50,36 @@
 :root {
   --radius: 0.75rem;
 
-  /* Blue & White palette — azul & blanco */
-  --background: oklch(0.99 0.006 230);
-  --foreground: oklch(0.18 0.08 250);
-  --muted: oklch(0.95 0.015 228);
-  --muted-foreground: oklch(0.52 0.055 240);
-  --card: oklch(0.97 0.010 228);
-  --card-foreground: oklch(0.18 0.08 250);
-  --popover: oklch(0.97 0.010 228);
-  --popover-foreground: oklch(0.18 0.08 250);
+  /* Elegant Black & Gold palette — negro & dorado */
+  --background: oklch(0.08 0.008 60);
+  --foreground: oklch(0.95 0.018 85);
+  --muted: oklch(0.13 0.010 60);
+  --muted-foreground: oklch(0.55 0.030 75);
+  --card: oklch(0.11 0.010 60);
+  --card-foreground: oklch(0.95 0.018 85);
+  --popover: oklch(0.11 0.010 60);
+  --popover-foreground: oklch(0.95 0.018 85);
 
-  --primary: oklch(0.52 0.22 255);           /* azul vívido */
-  --primary-foreground: oklch(0.99 0.006 230);
-  --secondary: oklch(0.92 0.04 228);
-  --secondary-foreground: oklch(0.25 0.09 250);
-  --accent: oklch(0.88 0.07 228);
-  --accent-foreground: oklch(0.30 0.12 250);
-  --destructive: oklch(0.55 0.20 25);
-  --destructive-foreground: oklch(0.99 0.006 230);
+  --primary: oklch(0.78 0.160 88);           /* dorado elegante */
+  --primary-foreground: oklch(0.08 0.008 60);
+  --secondary: oklch(0.16 0.012 60);
+  --secondary-foreground: oklch(0.95 0.018 85);
+  --accent: oklch(0.20 0.020 70);
+  --accent-foreground: oklch(0.78 0.160 88);
+  --destructive: oklch(0.45 0.160 25);
+  --destructive-foreground: oklch(0.95 0.018 85);
 
-  --border: oklch(0.52 0.22 255 / 20%);
-  --input: oklch(0.52 0.22 255 / 14%);
-  --ring: oklch(0.52 0.22 255);
+  --border: oklch(0.78 0.160 88 / 18%);
+  --input: oklch(0.78 0.160 88 / 12%);
+  --ring: oklch(0.78 0.160 88);
 
-  --terracotta: oklch(0.42 0.15 250);        /* azul medio-oscuro */
-  --rosado: oklch(0.73 0.13 240);            /* azul cielo */
-  --salvia: oklch(0.58 0.16 240);            /* azul medio */
-  --cacao: oklch(0.38 0.18 255);             /* azul índigo profundo */
-  --oro: oklch(0.62 0.18 230);              /* azul azure medio */
-  --peru-red: oklch(0.28 0.12 260);          /* azul marino oscuro */
-  --hueso: oklch(0.94 0.025 225);            /* azul muy pálido */
+  --terracotta: oklch(0.40 0.090 35);        /* bronce oscuro */
+  --rosado: oklch(0.22 0.055 30);            /* negro borgoña */
+  --salvia: oklch(0.20 0.020 80);            /* negro cálido */
+  --cacao: oklch(0.58 0.130 80);             /* dorado cálido */
+  --oro: oklch(0.78 0.160 88);              /* dorado puro */
+  --peru-red: oklch(0.38 0.140 28);          /* cobre oscuro */
+  --hueso: oklch(0.13 0.014 70);             /* negro suave */
 }
 
 @keyframes fade-up {
