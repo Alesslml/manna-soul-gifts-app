@@ -1,4 +1,4 @@
 {
   "installCommand": "bun install",
-  "buildCommand": "vite build"
+  "buildCommand": "vite build && mkdir -p .vercel/output/functions/__server.func && cp dist/config.json .vercel/output/config.json && cp -r dist/client/. .vercel/output/static/ && cp -r dist/server/. .vercel/output/functions/__server.func/"
 }
