@@ -50,36 +50,36 @@
 :root {
   --radius: 0.75rem;
 
-  /* Gothic dark palette — negro & dorado */
-  --background: oklch(0.07 0.012 55);
-  --foreground: oklch(0.93 0.022 82);
-  --muted: oklch(0.13 0.012 55);
-  --muted-foreground: oklch(0.56 0.022 72);
-  --card: oklch(0.10 0.014 55);
-  --card-foreground: oklch(0.93 0.022 82);
-  --popover: oklch(0.10 0.014 55);
-  --popover-foreground: oklch(0.93 0.022 82);
+  /* Blue & White palette — azul & blanco */
+  --background: oklch(0.99 0.006 230);
+  --foreground: oklch(0.18 0.08 250);
+  --muted: oklch(0.95 0.015 228);
+  --muted-foreground: oklch(0.52 0.055 240);
+  --card: oklch(0.97 0.010 228);
+  --card-foreground: oklch(0.18 0.08 250);
+  --popover: oklch(0.97 0.010 228);
+  --popover-foreground: oklch(0.18 0.08 250);
 
-  --primary: oklch(0.76 0.155 85);           /* oro gótico */
-  --primary-foreground: oklch(0.07 0.01 55);
-  --secondary: oklch(0.16 0.014 55);
-  --secondary-foreground: oklch(0.93 0.022 82);
-  --accent: oklch(0.20 0.04 68);
-  --accent-foreground: oklch(0.76 0.155 85);
-  --destructive: oklch(0.42 0.16 25);
-  --destructive-foreground: oklch(0.93 0.022 82);
+  --primary: oklch(0.52 0.22 255);           /* azul vívido */
+  --primary-foreground: oklch(0.99 0.006 230);
+  --secondary: oklch(0.92 0.04 228);
+  --secondary-foreground: oklch(0.25 0.09 250);
+  --accent: oklch(0.88 0.07 228);
+  --accent-foreground: oklch(0.30 0.12 250);
+  --destructive: oklch(0.55 0.20 25);
+  --destructive-foreground: oklch(0.99 0.006 230);
 
-  --border: oklch(0.76 0.155 85 / 20%);
-  --input: oklch(0.76 0.155 85 / 14%);
-  --ring: oklch(0.76 0.155 85);
+  --border: oklch(0.52 0.22 255 / 20%);
+  --input: oklch(0.52 0.22 255 / 14%);
+  --ring: oklch(0.52 0.22 255);
 
-  --terracotta: oklch(0.42 0.10 32);         /* borgoña oscuro */
-  --rosado: oklch(0.26 0.08 10);             /* granate profundo */
-  --salvia: oklch(0.30 0.06 145);            /* verde bosque oscuro */
-  --cacao: oklch(0.55 0.13 82);              /* dorado oscuro (ámbar) */
-  --oro: oklch(0.76 0.155 85);              /* oro gótico */
-  --peru-red: oklch(0.40 0.15 24);           /* carmesí oscuro */
-  --hueso: oklch(0.14 0.015 75);             /* hueso oscuro */
+  --terracotta: oklch(0.42 0.15 250);        /* azul medio-oscuro */
+  --rosado: oklch(0.73 0.13 240);            /* azul cielo */
+  --salvia: oklch(0.58 0.16 240);            /* azul medio */
+  --cacao: oklch(0.38 0.18 255);             /* azul índigo profundo */
+  --oro: oklch(0.62 0.18 230);              /* azul azure medio */
+  --peru-red: oklch(0.28 0.12 260);          /* azul marino oscuro */
+  --hueso: oklch(0.94 0.025 225);            /* azul muy pálido */
 }
 
 @keyframes fade-up {
