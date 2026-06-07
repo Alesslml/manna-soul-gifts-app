@@ -18,8 +18,8 @@ export function Hero() {
           Concept Store · Miraflores · Desde 2009
         </p>
         <h1 className="text-5xl sm:text-7xl md:text-[7.5rem] leading-[0.95] text-balance animate-fade-up [animation-delay:120ms]">
-          Regalos con <br />
-          <span className="text-primary">mucho amor</span>
+          Regalos <br />
+          <span className="text-primary">hechos en casa</span>
         </h1>
         <p className="mt-8 text-lg md:text-xl text-pretty max-w-2xl mx-auto text-foreground/75 animate-fade-up [animation-delay:240ms]">
           Souvenirs, moda, decoración, bienestar y detalles únicos para sorprender,
