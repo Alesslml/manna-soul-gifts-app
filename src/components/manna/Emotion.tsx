@@ -10,49 +10,41 @@ import imgUnico from "@/assets/hero-ceramica.jpg";
 const emotions = [
   {
     label: "Quiero agradecer",
-    sub: "Detalles que dicen gracias de verdad",
     img: imgAgradecer,
     wa: "Hola Manna, busco un regalo para agradecer a alguien especial. ¿Me pueden ayudar?",
   },
   {
     label: "Quiero sorprender",
-    sub: "Algo que no esperaba para nada",
     img: imgSorprender,
     wa: "Hola Manna, quiero sorprender a alguien con un regalo especial. ¿Qué me recomiendan?",
   },
   {
     label: "Quiero celebrar",
-    sub: "Cumpleaños, logros y momentos felices",
     img: imgCelebrar,
     wa: "Hola Manna, busco un regalo para celebrar una ocasión especial. ¿Qué opciones tienen?",
   },
   {
     label: "Quiero enamorar",
-    sub: "Romántico, delicado y con alma",
     img: imgEnamorar,
     wa: "Hola Manna, quiero un regalo romántico para enamorar a alguien. ¿Me pueden ayudar?",
   },
   {
     label: "Llevar el Perú conmigo",
-    sub: "Souvenirs con identidad y cultura",
     img: imgPeru,
     wa: "Hola Manna, busco souvenirs o recuerdos peruanos para llevarme. ¿Qué tienen disponible?",
   },
   {
     label: "Decorar mi espacio",
-    sub: "Objetos únicos que cuentan historias",
     img: imgDecorar,
     wa: "Hola Manna, busco artículos únicos para decorar mi espacio. ¿Qué me recomiendan?",
   },
   {
     label: "Cuidar a alguien",
-    sub: "Bienestar, aromas y pequeños rituales",
     img: imgCuidar,
     wa: "Hola Manna, quiero un regalo de bienestar para cuidar a alguien especial. ¿Qué tienen?",
   },
   {
     label: "Regalar algo único",
-    sub: "Lo que no encuentras en ningún otro lugar",
     img: imgUnico,
     wa: "Hola Manna, busco algo verdaderamente único para regalar. ¿Qué me pueden mostrar?",
   },
@@ -71,45 +63,50 @@ export function Emotion() {
             pero sí <span className="text-primary">qué quieres hacer sentir</span>.
           </h2>
         </div>
+      </div>
 
-        <div className="grid grid-cols-2 md:grid-cols-4 gap-3">
-          {emotions.map((e) => (
-            <a
-              key={e.label}
-              href={`https://wa.me/51955993404?text=${encodeURIComponent(e.wa)}`}
-              target="_blank"
-              rel="noopener noreferrer"
-              className="group relative aspect-[3/4] rounded-2xl overflow-hidden"
-            >
-              <img
-                src={e.img}
-                alt={e.label}
-                loading="lazy"
-                className="absolute inset-0 size-full object-cover transition-transform duration-700 group-hover:scale-105"
-              />
+      {/* Grid fluido sin gaps, sin padding */}
+      <div className="grid grid-cols-2 md:grid-cols-4">
+        {emotions.map((e) => (
+          <a
+            key={e.label}
+            href={`https://wa.me/51955993404?text=${encodeURIComponent(e.wa)}`}
+            target="_blank"
+            rel="noopener noreferrer"
+            className="group relative aspect-[3/4] overflow-hidden"
+          >
+            {/* Foto de fondo */}
+            <img
+              src={e.img}
+              alt={e.label}
+              loading="lazy"
+              className="absolute inset-0 size-full object-cover transition-transform duration-700 group-hover:scale-105"
+            />
 
-              {/* Overlay base siempre visible */}
-              <div className="absolute inset-0 bg-gradient-to-t from-black/85 via-black/30 to-black/10" />
+            {/* Overlay oscuro dramático desde la mitad */}
+            <div
+              className="absolute inset-0"
+              style={{
+                background:
+                  "linear-gradient(to top, rgba(0,0,0,0.92) 0%, rgba(0,0,0,0.6) 40%, rgba(0,0,0,0.15) 65%, rgba(0,0,0,0) 100%)",
+              }}
+            />
 
-              {/* Overlay extra al hover */}
-              <div className="absolute inset-0 bg-black/20 opacity-0 group-hover:opacity-100 transition-opacity duration-300" />
+            {/* Hover overlay suave */}
+            <div className="absolute inset-0 bg-black/20 opacity-0 group-hover:opacity-100 transition-opacity duration-400" />
 
-              {/* Contenido */}
-              <div className="absolute inset-0 flex flex-col justify-end p-5">
-                <p className="font-display italic text-xl md:text-2xl leading-tight text-white mb-1.5">
-                  {e.label}
-                </p>
-                <p className="text-[11px] text-white/60 leading-relaxed mb-4 translate-y-1 opacity-0 group-hover:opacity-100 group-hover:translate-y-0 transition-all duration-300">
-                  {e.sub}
-                </p>
-                <span className="inline-flex items-center gap-2 text-[10px] font-mono uppercase tracking-[0.25em] text-primary">
-                  Ver selección
-                  <span className="group-hover:translate-x-1 transition-transform inline-block">→</span>
-                </span>
-              </div>
-            </a>
-          ))}
-        </div>
+            {/* Texto */}
+            <div className="absolute inset-x-0 bottom-0 p-6 md:p-8">
+              <p className="font-display italic text-3xl md:text-4xl leading-tight text-white mb-3">
+                {e.label}
+              </p>
+              <span className="inline-flex items-center gap-2 font-mono text-[10px] uppercase tracking-[0.3em] text-primary/80 group-hover:text-primary transition-colors">
+                Ver selección
+                <span className="group-hover:translate-x-1 transition-transform inline-block">→</span>
+              </span>
+            </div>
+          </a>
+        ))}
       </div>
     </section>
   );
