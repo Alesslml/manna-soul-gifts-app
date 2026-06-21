@@ -8,14 +8,14 @@ import corporativo from "@/assets/mundo-corporativo.jpg";
 import celebrar from "@/assets/mundo-celebrar.jpg";
 
 const mundos = [
-  { n: "01", title: "Regalos para celebrar", desc: "Cumpleaños, amor, graduaciones y agradecimientos.", img: celebrar, tone: "bg-rosado/30" },
-  { n: "02", title: "Souvenirs peruanos", desc: "Recuerdos con identidad, cultura y diseño.", img: souvenirs, tone: "bg-oro/15" },
-  { n: "03", title: "Gift Boxes", desc: "Cajas curadas, listas para sorprender.", img: giftboxes, tone: "bg-hueso" },
-  { n: "04", title: "Moda & Joyería", desc: "Accesorios y piezas con personalidad.", img: moda, tone: "bg-salvia/15" },
-  { n: "05", title: "Decoración", desc: "Objetos únicos para llenar tus espacios.", img: decoracion, tone: "bg-cacao/10" },
-  { n: "06", title: "Bienestar", desc: "Aromas, jabones, aceites y pequeños rituales.", img: bienestar, tone: "bg-salvia/15" },
-  { n: "07", title: "Ramos y flores secas", desc: "Detalles delicados, duraderos y con encanto.", img: ramos, tone: "bg-rosado/30" },
-  { n: "08", title: "Regalos corporativos", desc: "Packs especiales para empresas y eventos.", img: corporativo, tone: "bg-oro/15" },
+  { n: "01", title: "Regalos para celebrar", desc: "Cumpleaños, amor, graduaciones y agradecimientos.", img: celebrar, tone: "bg-rosado/30", wa: "Hola Manna, me interesan los regalos para celebrar (cumpleaños, amor, graduaciones). ¿Me puedes ayudar?" },
+  { n: "02", title: "Souvenirs peruanos", desc: "Recuerdos con identidad, cultura y diseño.", img: souvenirs, tone: "bg-oro/15", wa: "Hola Manna, busco souvenirs peruanos. ¿Qué tienen disponible?" },
+  { n: "03", title: "Gift Boxes", desc: "Cajas curadas, listas para sorprender.", img: giftboxes, tone: "bg-hueso", wa: "Hola Manna, me interesan sus Gift Boxes. ¿Cuáles tienen disponibles?" },
+  { n: "04", title: "Moda & Joyería", desc: "Accesorios y piezas con personalidad.", img: moda, tone: "bg-salvia/15", wa: "Hola Manna, quiero ver su selección de moda y joyería. ¿Me pueden mostrar opciones?" },
+  { n: "05", title: "Decoración", desc: "Objetos únicos para llenar tus espacios.", img: decoracion, tone: "bg-cacao/10", wa: "Hola Manna, busco artículos de decoración únicos. ¿Qué tienen disponible?" },
+  { n: "06", title: "Bienestar", desc: "Aromas, jabones, aceites y pequeños rituales.", img: bienestar, tone: "bg-salvia/15", wa: "Hola Manna, me interesan sus productos de bienestar (aromas, jabones, aceites). ¿Qué tienen?" },
+  { n: "07", title: "Ramos y flores secas", desc: "Detalles delicados, duraderos y con encanto.", img: ramos, tone: "bg-rosado/30", wa: "Hola Manna, busco ramos o flores secas. ¿Qué opciones tienen disponibles?" },
+  { n: "08", title: "Regalos corporativos", desc: "Packs especiales para empresas y eventos.", img: corporativo, tone: "bg-oro/15", wa: "Hola Manna, quiero cotizar regalos corporativos para mi empresa. ¿Me pueden ayudar?" },
 ];
 
 export function Mundos() {
@@ -41,7 +41,9 @@ export function Mundos() {
           {mundos.map((m) => (
             <a
               key={m.n}
-              href="#quiz"
+              href={`https://wa.me/51955993404?text=${encodeURIComponent(m.wa)}`}
+              target="_blank"
+              rel="noopener noreferrer"
               className="group cursor-pointer block"
             >
               <div className={`relative aspect-square rounded-2xl overflow-hidden ${m.tone} mb-4`}>

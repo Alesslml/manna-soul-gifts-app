@@ -26,14 +26,24 @@ export function GiftQuiz() {
   const done = step >= STEPS.length;
 
   const recs = useMemo(() => {
-    const list = [
-      { tag: "Gift Boxes", desc: "Listos para sorprender con alma." },
-      { tag: "Souvenirs peruanos", desc: "Cultura y diseño para llevar contigo." },
-      { tag: "Bienestar", desc: "Pequeños rituales con cariño." },
-      { tag: "Joyería", desc: "Piezas con identidad y carácter." },
+    const all = [
+      { tag: "Gift Boxes", desc: "Listos para sorprender con alma.", keys: ["Para ella", "Para mamá", "Para una amiga", "Cumpleaños", "Amor", "Navidad", "Elegante", "Romántico"] },
+      { tag: "Souvenirs peruanos", desc: "Cultura y diseño para llevar contigo.", keys: ["Para turistas", "Viaje", "Sin motivo, porque sí", "Peruano y cultural", "Único y creativo"] },
+      { tag: "Bienestar", desc: "Pequeños rituales con cariño.", keys: ["Para ella", "Para mamá", "Para una amiga", "Wellness", "Agradecimiento", "Open house"] },
+      { tag: "Joyería", desc: "Piezas con identidad y carácter.", keys: ["Para ella", "Para mamá", "Para una amiga", "Amor", "Graduación", "Romántico", "Elegante"] },
+      { tag: "Regalos corporativos", desc: "Packs especiales para empresas.", keys: ["Para empresas", "Agradecimiento", "Elegante"] },
+      { tag: "Decoración", desc: "Objetos únicos para tu espacio.", keys: ["Para él", "Para papá", "Decorativo", "Open house", "Bienvenida"] },
+      { tag: "Ramos y flores secas", desc: "Detalles delicados y duraderos.", keys: ["Para ella", "Para mamá", "Amor", "Romántico", "Sin motivo, porque sí"] },
+      { tag: "Moda & Joyería", desc: "Accesorios con personalidad.", keys: ["Para ella", "Para mamá", "Para una amiga", "Graduación", "Elegante", "Único y creativo"] },
     ];
-    return list;
-  }, []);
+    const selected = Object.values(answers);
+    const scored = all.map((r) => ({
+      ...r,
+      score: r.keys.filter((k) => selected.includes(k)).length,
+    }));
+    scored.sort((a, b) => b.score - a.score);
+    return scored.slice(0, 4);
+  }, [answers]);
 
   const waMsg = encodeURIComponent(
     `Hola Manna, busco un regalo. ${answers.para ?? ""} · ${answers.ocasion ?? ""} · ${answers.estilo ?? ""}`,

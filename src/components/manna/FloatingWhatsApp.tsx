@@ -1,9 +1,44 @@
-const WA = "https://wa.me/51955993404?text=Hola%20Manna%2C%20me%20gustar%C3%ADa%20m%C3%A1s%20informaci%C3%B3n";
+import { useEffect, useState } from "react";
+
+const SECTION_MESSAGES: Record<string, string> = {
+  mundos: "Hola Manna, me gustaría ver sus productos disponibles. ¿Me pueden ayudar?",
+  quiz: "Hola Manna, necesito ayuda para encontrar el regalo ideal. ¿Me pueden orientar?",
+  souvenirs: "Hola Manna, me interesan sus souvenirs peruanos. ¿Qué tienen disponible?",
+  corporativo: "Hola Manna, quiero cotizar regalos corporativos para mi empresa.",
+  historia: "Hola Manna, quiero conocer más sobre su tienda y productos.",
+  visitanos: "Hola Manna, quiero visitar la tienda en Miraflores. ¿Cuál es el horario?",
+};
+
+const DEFAULT_MSG = "Hola Manna, me gustaría más información";
 
 export function FloatingWhatsApp() {
+  const [msg, setMsg] = useState(DEFAULT_MSG);
+
+  useEffect(() => {
+    const sections = Object.keys(SECTION_MESSAGES).map((id) =>
+      document.getElementById(id)
+    ).filter(Boolean) as HTMLElement[];
+
+    const observer = new IntersectionObserver(
+      (entries) => {
+        const visible = entries.filter((e) => e.isIntersecting);
+        if (visible.length > 0) {
+          const id = visible[0].target.id;
+          setMsg(SECTION_MESSAGES[id] ?? DEFAULT_MSG);
+        }
+      },
+      { threshold: 0.3 }
+    );
+
+    sections.forEach((s) => observer.observe(s));
+    return () => observer.disconnect();
+  }, []);
+
+  const href = `https://wa.me/51955993404?text=${encodeURIComponent(msg)}`;
+
   return (
     <a
-      href={WA}
+      href={href}
       target="_blank"
       rel="noopener noreferrer"
       aria-label="Escríbenos por WhatsApp"
