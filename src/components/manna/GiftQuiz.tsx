@@ -53,11 +53,8 @@ export function GiftQuiz() {
     <section id="quiz" className="py-24 px-6 bg-hueso">
       <div className="max-w-5xl mx-auto">
         <div className="text-center mb-12">
-          <p className="font-mono text-[10px] uppercase tracking-[0.4em] text-muted-foreground mb-4">
-            Encuentra el regalo perfecto
-          </p>
-          <h2 className="text-4xl md:text-5xl text-balance">
-            ¿No sabes <span className="text-primary">qué regalar?</span>
+          <h2 className="text-4xl md:text-5xl">
+            ¿No sabes qué regalar?
           </h2>
           <p className="mt-4 text-muted-foreground max-w-xl mx-auto">
             Te ayudamos a encontrarlo en tres pasitos. Sin presión, con mucho cariño.
@@ -128,7 +125,7 @@ export function GiftQuiz() {
                     className="group flex items-center justify-between p-5 rounded-2xl bg-hueso hover:bg-rosado/30 transition-colors"
                   >
                     <div>
-                      <p className="font-display italic text-xl">{r.tag}</p>
+                      <p className="text-xl font-medium">{r.tag}</p>
                       <p className="text-xs text-muted-foreground mt-1">{r.desc}</p>
                     </div>
                     <span className="text-primary text-xl group-hover:translate-x-1 transition-transform">

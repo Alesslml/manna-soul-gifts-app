@@ -23,11 +23,8 @@ export function Testimonios() {
       <div className="max-w-7xl mx-auto">
         <div className="flex flex-col md:flex-row gap-12">
           <div className="md:w-1/3">
-            <p className="font-mono text-[10px] uppercase tracking-[0.4em] text-muted-foreground mb-4">
-              Testimonios
-            </p>
-            <h2 className="text-4xl md:text-5xl text-balance leading-tight">
-              Lo que dicen <br /> quienes <span className="text-primary">encuentran su regalo</span> en Manna.
+            <h2 className="text-4xl md:text-5xl leading-tight">
+              Lo que dicen quienes encuentran su regalo en Manna.
             </h2>
             <div className="mt-8 flex items-center gap-3">
               <svg viewBox="0 0 24 24" className="size-6 shrink-0" aria-label="Google">

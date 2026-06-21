@@ -22,11 +22,8 @@ export function Corporativo() {
           />
         </div>
         <div className="md:col-span-3">
-          <p className="font-mono text-[10px] uppercase tracking-[0.4em] text-primary mb-5">
-            Empresas & eventos
-          </p>
-          <h2 className="text-4xl md:text-5xl text-balance mb-6">
-            Regalos corporativos <br /> con <span className="text-primary">identidad</span>.
+          <h2 className="text-4xl md:text-5xl mb-6">
+            Regalos corporativos con identidad.
           </h2>
           <p className="text-muted-foreground max-w-lg mb-10">
             Sorprende a clientes, colaboradores e invitados con regalos curados, elegantes y
@@ -40,7 +37,7 @@ export function Corporativo() {
                 key={i}
                 className="flex items-center gap-3 p-4 rounded-2xl bg-hueso border border-foreground/5"
               >
-                <span className="size-1.5 rounded-full bg-primary" />
+                <span className="size-1.5 rounded-full bg-primary shrink-0" />
                 <span className="text-sm">{i}</span>
               </li>
             ))}

@@ -11,11 +11,8 @@ export function Pasos() {
     <section className="py-24 px-6 bg-hueso">
       <div className="max-w-7xl mx-auto">
         <div className="mb-12 max-w-xl">
-          <p className="font-mono text-[10px] uppercase tracking-[0.4em] text-muted-foreground mb-4">
-            ¿Cómo comprar en Manna?
-          </p>
-          <h2 className="text-4xl md:text-5xl text-balance">
-            Cinco pasos para regalar <span className="text-primary">con alma</span>.
+          <h2 className="text-4xl md:text-5xl">
+            Cinco pasos para regalar con alma.
           </h2>
         </div>
         <div className="grid grid-cols-2 md:grid-cols-5 gap-4">
@@ -24,7 +21,7 @@ export function Pasos() {
               key={p.n}
               className="p-6 rounded-2xl bg-background border border-foreground/5"
             >
-              <p className="font-display italic text-3xl text-primary mb-3">{p.n}</p>
+              <p className="text-3xl font-semibold text-foreground/20 mb-3">{p.n}</p>
               <p className="font-medium mb-1">{p.t}</p>
               <p className="text-xs text-muted-foreground leading-relaxed">{p.d}</p>
             </div>

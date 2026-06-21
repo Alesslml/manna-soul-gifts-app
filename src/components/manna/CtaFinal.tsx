@@ -1,16 +1,9 @@
 export function CtaFinal() {
   return (
-    <section className="py-32 px-6 text-center relative overflow-hidden">
-      <div className="absolute inset-0 pointer-events-none">
-        <div className="absolute top-10 left-10 w-72 h-72 rounded-full bg-rosado/30 blur-3xl opacity-60" />
-        <div className="absolute bottom-10 right-10 w-96 h-96 rounded-full bg-salvia/20 blur-3xl opacity-60" />
-      </div>
-      <div className="relative max-w-3xl mx-auto">
-        <p className="font-mono text-[10px] uppercase tracking-[0.4em] text-primary mb-6">
-          Haz que regalar sea inolvidable
-        </p>
-        <h2 className="text-5xl md:text-7xl leading-[1.05] text-balance mb-8">
-          Haz que tu próximo regalo <br /> <span className="text-primary">tenga historia</span>.
+    <section className="py-32 px-6 text-center">
+      <div className="max-w-3xl mx-auto">
+        <h2 className="text-5xl md:text-7xl leading-[1.05] mb-8">
+          Haz que tu próximo regalo tenga historia.
         </h2>
         <p className="text-muted-foreground max-w-xl mx-auto mb-10">
           En Manna creemos que regalar es una forma de decir "pensé en ti". Por eso elegimos

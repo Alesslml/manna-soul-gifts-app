@@ -5,11 +5,8 @@ export function Souvenirs() {
     <section id="souvenirs" className="py-24 md:py-32 px-6 bg-cacao text-background overflow-hidden">
       <div className="max-w-7xl mx-auto grid md:grid-cols-2 gap-12 md:gap-16 items-center">
         <div>
-          <p className="font-mono text-[10px] uppercase tracking-[0.4em] text-oro mb-5">
-            Souvenirs con alma peruana
-          </p>
-          <h2 className="text-4xl md:text-6xl text-balance mb-8 leading-[1.05]">
-            Llévate un <br /> <span className="text-oro">pedacito del Perú</span>.
+          <h2 className="text-4xl md:text-6xl mb-8 leading-[1.05]">
+            Llévate un pedacito del Perú.
           </h2>
           <p className="text-background/75 leading-relaxed max-w-md mb-10">
             Souvenirs peruanos modernos, coloridos y llenos de significado. Detalles que no solo
@@ -31,11 +28,8 @@ export function Souvenirs() {
               Preguntar por WhatsApp
             </a>
           </div>
-          <p className="mt-8 text-xs font-mono uppercase tracking-[0.25em] text-background/50">
-            Recavarren 324 · Miraflores · Lima
-          </p>
         </div>
-        <div className="relative">
+        <div>
           <img
             src={souvenirs}
             alt="Souvenirs peruanos modernos"

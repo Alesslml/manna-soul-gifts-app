@@ -55,12 +55,8 @@ export function Emotion() {
     <section className="py-24 md:py-32 px-6 bg-card">
       <div className="max-w-7xl mx-auto">
         <div className="text-center max-w-2xl mx-auto mb-14">
-          <p className="font-mono text-[10px] uppercase tracking-[0.4em] text-muted-foreground mb-4">
-            Elige tu regalo por emoción
-          </p>
-          <h2 className="text-4xl md:text-5xl text-balance">
-            A veces no sabes qué regalar, <br />
-            pero sí <span className="text-primary">qué quieres hacer sentir</span>.
+          <h2 className="text-4xl md:text-5xl">
+            A veces no sabes qué regalar, pero sí qué quieres hacer sentir.
           </h2>
         </div>
       </div>
@@ -97,7 +93,7 @@ export function Emotion() {
 
             {/* Texto */}
             <div className="absolute inset-x-0 bottom-0 p-6 md:p-8">
-              <p className="font-display italic text-3xl md:text-4xl leading-tight text-white mb-3">
+              <p className="text-3xl md:text-4xl font-semibold leading-tight text-white mb-3">
                 {e.label}
               </p>
               <span className="inline-flex items-center gap-2 font-mono text-[10px] uppercase tracking-[0.3em] text-primary/80 group-hover:text-primary transition-colors">

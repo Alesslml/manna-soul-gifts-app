@@ -4,22 +4,17 @@ export function BrandStory() {
   return (
     <section id="historia" className="py-24 md:py-32 px-6">
       <div className="max-w-7xl mx-auto grid md:grid-cols-2 gap-12 md:gap-20 items-center">
-        <div className="relative">
-          <div className="absolute -inset-6 rounded-full bg-rosado/30 blur-3xl opacity-60" />
+        <div>
           <img
             src={brand}
             alt="Manos envolviendo un regalo en tela cruda con flores secas"
             loading="lazy"
-            className="relative w-full aspect-[4/5] object-cover rounded-3xl"
+            className="w-full aspect-[4/5] object-cover rounded-3xl"
           />
         </div>
         <div>
-          <p className="font-mono text-[10px] uppercase tracking-[0.4em] text-primary mb-5">
-            Desde 2009 · Miraflores
-          </p>
-          <h2 className="text-4xl md:text-5xl mb-8 text-balance">
-            Manna no es una tienda, <br />
-            es una <span className="text-primary">experiencia</span>.
+          <h2 className="text-4xl md:text-5xl mb-8">
+            Manna no es una tienda, es una experiencia.
           </h2>
           <div className="space-y-5 text-foreground/80 leading-relaxed">
             <p>

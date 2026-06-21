@@ -32,7 +32,7 @@ export function Nav() {
     >
       <div className="max-w-7xl mx-auto px-6 h-16 flex items-center justify-between">
         <a href="#top" className="flex items-baseline gap-2">
-          <span className="font-display italic text-2xl text-primary tracking-tight">
+          <span className="text-2xl font-semibold tracking-tight">
             Manna
           </span>
           <span className="hidden sm:inline text-[10px] font-mono uppercase tracking-[0.25em] text-muted-foreground">

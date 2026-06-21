@@ -7,11 +7,8 @@ export function Visitanos() {
     <section id="visitanos" className="py-24 md:py-32 px-6 bg-card">
       <div className="max-w-7xl mx-auto">
         <div className="text-center max-w-2xl mx-auto mb-14">
-          <p className="font-mono text-[10px] uppercase tracking-[0.4em] text-muted-foreground mb-4">
-            Concept store en Miraflores
-          </p>
-          <h2 className="text-4xl md:text-5xl text-balance">
-            Un espacio para <span className="text-primary">mirar, tocar y sorprenderse</span>.
+          <h2 className="text-4xl md:text-5xl">
+            Un espacio para mirar, tocar y sorprenderse.
           </h2>
         </div>
 
@@ -26,19 +23,19 @@ export function Visitanos() {
           <div className="flex flex-col">
             <div className="grid grid-cols-2 gap-3 mb-5">
               <div className="p-6 rounded-2xl bg-hueso border border-foreground/5">
-                <p className="text-[10px] font-mono uppercase tracking-[0.25em] text-primary mb-2">
+                <p className="text-xs font-medium uppercase tracking-widest text-muted-foreground mb-2">
                   Dirección
                 </p>
                 <p className="text-sm leading-relaxed">Recavarren 324<br />Miraflores, Lima</p>
               </div>
               <div className="p-6 rounded-2xl bg-hueso border border-foreground/5">
-                <p className="text-[10px] font-mono uppercase tracking-[0.25em] text-primary mb-2">
+                <p className="text-xs font-medium uppercase tracking-widest text-muted-foreground mb-2">
                   Contacto
                 </p>
                 <p className="text-sm leading-relaxed">+51 955 993 404</p>
               </div>
               <div className="p-6 rounded-2xl bg-hueso border border-foreground/5 col-span-2">
-                <p className="text-[10px] font-mono uppercase tracking-[0.25em] text-primary mb-2">
+                <p className="text-xs font-medium uppercase tracking-widest text-muted-foreground mb-2">
                   Horario
                 </p>
                 <div className="grid grid-cols-2 gap-4 text-sm">

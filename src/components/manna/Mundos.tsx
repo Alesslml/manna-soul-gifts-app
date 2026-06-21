@@ -24,12 +24,8 @@ export function Mundos() {
       <div className="max-w-7xl mx-auto">
         <div className="flex flex-col md:flex-row md:items-end justify-between mb-14 gap-6">
           <div className="max-w-xl">
-            <p className="font-mono text-[10px] uppercase tracking-[0.4em] text-muted-foreground mb-4">
-              Explora por mundos
-            </p>
-            <h2 className="text-4xl md:text-5xl text-balance">
-              Cada rincón de Manna <br />
-              tiene <span className="text-primary">algo que contar</span>.
+            <h2 className="text-4xl md:text-5xl">
+              Cada rincón de Manna tiene algo que contar.
             </h2>
           </div>
           <p className="text-muted-foreground max-w-sm">

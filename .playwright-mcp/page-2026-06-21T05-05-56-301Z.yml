@@ -1,0 +1,371 @@
+- generic [ref=e2]:
+  - navigation [ref=e3]:
+    - generic [ref=e4]:
+      - link "Manna Store · Perú" [ref=e5] [cursor=pointer]:
+        - /url: "#top"
+        - generic [ref=e6]: Manna
+        - generic [ref=e7]: Store · Perú
+      - generic [ref=e8]:
+        - link "Mundos" [ref=e9] [cursor=pointer]:
+          - /url: "#mundos"
+        - link "Regalo ideal" [ref=e10] [cursor=pointer]:
+          - /url: "#quiz"
+        - link "Souvenirs" [ref=e11] [cursor=pointer]:
+          - /url: "#souvenirs"
+        - link "Corporativo" [ref=e12] [cursor=pointer]:
+          - /url: "#corporativo"
+        - link "Historia" [ref=e13] [cursor=pointer]:
+          - /url: "#historia"
+        - link "Visítanos" [ref=e14] [cursor=pointer]:
+          - /url: "#visitanos"
+      - link "WhatsApp" [ref=e16] [cursor=pointer]:
+        - /url: https://wa.me/51955993404?text=Hola%20me%20puedes%20ayudar%3F
+  - main [ref=e17]:
+    - generic [ref=e18]:
+      - generic [ref=e19]:
+        - paragraph [ref=e20]: Concept Store · Miraflores · Desde 2009
+        - heading "Regalos hechos en casa" [level=1] [ref=e21]:
+          - text: Regalos
+          - text: hechos en casa
+        - paragraph [ref=e22]: Souvenirs, moda, decoración, bienestar y detalles únicos para sorprender, celebrar y llevar contigo un pedacito del Perú.
+        - generic [ref=e23]:
+          - link "Comprar ahora" [ref=e24] [cursor=pointer]:
+            - /url: "#mundos"
+          - link "Encontrar mi regalo ideal" [ref=e25] [cursor=pointer]:
+            - /url: "#quiz"
+          - link "Visítanos en Miraflores" [ref=e26] [cursor=pointer]:
+            - /url: "#visitanos"
+        - paragraph [ref=e27]: +1000 productos curados para regalar, decorar, vestir y emocionar.
+      - generic [ref=e28]:
+        - generic [ref=e29]:
+          - img "Cerámica" [ref=e30]
+          - generic [ref=e31]: Cerámica
+        - generic [ref=e32]:
+          - img "Gift Boxes" [ref=e33]
+          - generic [ref=e34]: Gift Boxes
+        - generic [ref=e35]:
+          - img "Textiles" [ref=e36]
+          - generic [ref=e37]: Textiles
+        - generic [ref=e38]:
+          - img "Joyería" [ref=e39]
+          - generic [ref=e40]: Joyería
+    - generic [ref=e42]:
+      - generic [ref=e43]:
+        - paragraph [ref=e44]: Encuentra el regalo perfecto
+        - heading "¿No sabes qué regalar?" [level=2] [ref=e45]
+        - paragraph [ref=e46]: Te ayudamos a encontrarlo en tres pasitos. Sin presión, con mucho cariño.
+      - generic [ref=e52]:
+        - paragraph [ref=e53]: Paso 01 de 03
+        - heading "¿Para quién es?" [level=3] [ref=e54]
+        - generic [ref=e55]:
+          - button "Para ella" [ref=e56]
+          - button "Para él" [ref=e57]
+          - button "Para mamá" [ref=e58]
+          - button "Para papá" [ref=e59]
+          - button "Para una amiga" [ref=e60]
+          - button "Para turistas" [ref=e61]
+          - button "Para empresas" [ref=e62]
+    - generic [ref=e64]:
+      - generic [ref=e65]:
+        - generic [ref=e66]:
+          - paragraph [ref=e67]: Explora por mundos
+          - heading "Cada rincón de Manna tiene algo que contar." [level=2] [ref=e68]:
+            - text: Cada rincón de Manna
+            - text: tiene algo que contar.
+        - paragraph [ref=e69]: Curamos cada producto con cuidado, cultura y emoción. Encuentra el detalle que no sabías que estabas buscando.
+      - generic [ref=e70]:
+        - link "Regalos para celebrar Mundo 01 Regalos para celebrar Cumpleaños, amor, graduaciones y agradecimientos." [ref=e71] [cursor=pointer]:
+          - /url: "#quiz"
+          - generic [ref=e72]:
+            - img "Regalos para celebrar" [ref=e73]
+            - generic [ref=e74]: Mundo 01
+          - heading "Regalos para celebrar" [level=3] [ref=e75]
+          - paragraph [ref=e76]: Cumpleaños, amor, graduaciones y agradecimientos.
+        - link "Souvenirs peruanos Mundo 02 Souvenirs peruanos Recuerdos con identidad, cultura y diseño." [ref=e77] [cursor=pointer]:
+          - /url: "#quiz"
+          - generic [ref=e78]:
+            - img "Souvenirs peruanos" [ref=e79]
+            - generic [ref=e80]: Mundo 02
+          - heading "Souvenirs peruanos" [level=3] [ref=e81]
+          - paragraph [ref=e82]: Recuerdos con identidad, cultura y diseño.
+        - link "Gift Boxes Mundo 03 Gift Boxes Cajas curadas, listas para sorprender." [ref=e83] [cursor=pointer]:
+          - /url: "#quiz"
+          - generic [ref=e84]:
+            - img "Gift Boxes" [ref=e85]
+            - generic [ref=e86]: Mundo 03
+          - heading "Gift Boxes" [level=3] [ref=e87]
+          - paragraph [ref=e88]: Cajas curadas, listas para sorprender.
+        - link "Moda & Joyería Mundo 04 Moda & Joyería Accesorios y piezas con personalidad." [ref=e89] [cursor=pointer]:
+          - /url: "#quiz"
+          - generic [ref=e90]:
+            - img "Moda & Joyería" [ref=e91]
+            - generic [ref=e92]: Mundo 04
+          - heading "Moda & Joyería" [level=3] [ref=e93]
+          - paragraph [ref=e94]: Accesorios y piezas con personalidad.
+        - link "Decoración Mundo 05 Decoración Objetos únicos para llenar tus espacios." [ref=e95] [cursor=pointer]:
+          - /url: "#quiz"
+          - generic [ref=e96]:
+            - img "Decoración" [ref=e97]
+            - generic [ref=e98]: Mundo 05
+          - heading "Decoración" [level=3] [ref=e99]
+          - paragraph [ref=e100]: Objetos únicos para llenar tus espacios.
+        - link "Bienestar Mundo 06 Bienestar Aromas, jabones, aceites y pequeños rituales." [ref=e101] [cursor=pointer]:
+          - /url: "#quiz"
+          - generic [ref=e102]:
+            - img "Bienestar" [ref=e103]
+            - generic [ref=e104]: Mundo 06
+          - heading "Bienestar" [level=3] [ref=e105]
+          - paragraph [ref=e106]: Aromas, jabones, aceites y pequeños rituales.
+        - link "Ramos y flores secas Mundo 07 Ramos y flores secas Detalles delicados, duraderos y con encanto." [ref=e107] [cursor=pointer]:
+          - /url: "#quiz"
+          - generic [ref=e108]:
+            - img "Ramos y flores secas" [ref=e109]
+            - generic [ref=e110]: Mundo 07
+          - heading "Ramos y flores secas" [level=3] [ref=e111]
+          - paragraph [ref=e112]: Detalles delicados, duraderos y con encanto.
+        - link "Regalos corporativos Mundo 08 Regalos corporativos Packs especiales para empresas y eventos." [ref=e113] [cursor=pointer]:
+          - /url: "#quiz"
+          - generic [ref=e114]:
+            - img "Regalos corporativos" [ref=e115]
+            - generic [ref=e116]: Mundo 08
+          - heading "Regalos corporativos" [level=3] [ref=e117]
+          - paragraph [ref=e118]: Packs especiales para empresas y eventos.
+    - generic [ref=e120]:
+      - generic [ref=e121]:
+        - paragraph [ref=e122]: Elige tu regalo por emoción
+        - heading "A veces no sabes qué regalar, pero sí qué quieres hacer sentir." [level=2] [ref=e123]:
+          - text: A veces no sabes qué regalar,
+          - text: pero sí qué quieres hacer sentir.
+      - generic [ref=e124]:
+        - button "Quiero agradecer Ver selección →" [ref=e125]:
+          - generic [ref=e126]: Quiero agradecer
+          - text: Ver selección →
+        - button "Quiero sorprender Ver selección →" [ref=e127]:
+          - generic [ref=e128]: Quiero sorprender
+          - text: Ver selección →
+        - button "Quiero celebrar Ver selección →" [ref=e129]:
+          - generic [ref=e130]: Quiero celebrar
+          - text: Ver selección →
+        - button "Quiero enamorar Ver selección →" [ref=e131]:
+          - generic [ref=e132]: Quiero enamorar
+          - text: Ver selección →
+        - button "Llevarme un recuerdo del Perú Ver selección →" [ref=e133]:
+          - generic [ref=e134]: Llevarme un recuerdo del Perú
+          - text: Ver selección →
+        - button "Decorar mi espacio Ver selección →" [ref=e135]:
+          - generic [ref=e136]: Decorar mi espacio
+          - text: Ver selección →
+        - button "Cuidar a alguien Ver selección →" [ref=e137]:
+          - generic [ref=e138]: Cuidar a alguien
+          - text: Ver selección →
+        - button "Regalar algo único Ver selección →" [ref=e139]:
+          - generic [ref=e140]: Regalar algo único
+          - text: Ver selección →
+    - generic [ref=e142]:
+      - generic [ref=e144]:
+        - paragraph [ref=e145]: Regala por ocasión
+        - heading "Cada momento merece un detalle distinto." [level=2] [ref=e146]:
+          - text: Cada momento merece
+          - text: un detalle distinto.
+      - generic [ref=e147]:
+        - link "Cumpleaños" [ref=e148] [cursor=pointer]:
+          - /url: "#quiz"
+        - link "Amor" [ref=e149] [cursor=pointer]:
+          - /url: "#quiz"
+        - link "Graduación" [ref=e150] [cursor=pointer]:
+          - /url: "#quiz"
+        - link "Navidad" [ref=e151] [cursor=pointer]:
+          - /url: "#quiz"
+        - link "Open House" [ref=e152] [cursor=pointer]:
+          - /url: "#quiz"
+        - link "Agradecimiento" [ref=e153] [cursor=pointer]:
+          - /url: "#quiz"
+        - link "Viaje" [ref=e154] [cursor=pointer]:
+          - /url: "#quiz"
+        - link "Bienvenida" [ref=e155] [cursor=pointer]:
+          - /url: "#quiz"
+        - link "Corporativos" [ref=e156] [cursor=pointer]:
+          - /url: "#quiz"
+        - link "Solo porque sí" [ref=e157] [cursor=pointer]:
+          - /url: "#quiz"
+    - generic [ref=e159]:
+      - img "Manos envolviendo un regalo en tela cruda con flores secas" [ref=e162]
+      - generic [ref=e163]:
+        - paragraph [ref=e164]: Desde 2009 · Miraflores
+        - heading "Manna no es una tienda, es una experiencia." [level=2] [ref=e165]:
+          - text: Manna no es una tienda,
+          - text: es una experiencia.
+        - generic [ref=e166]:
+          - paragraph [ref=e167]: Manna es ese lugar donde entras buscando un regalo y sales con una historia.
+          - paragraph [ref=e168]: Desde 2009 reunimos productos especiales, marcas peruanas y detalles hechos con amor. En nuestra concept store conviven la moda, el arte, la decoración, el bienestar y la emoción de regalar algo diferente.
+        - link "→ Visítanos en Miraflores" [ref=e169] [cursor=pointer]:
+          - /url: "#visitanos"
+          - generic [ref=e170]: →
+          - generic [ref=e171]: Visítanos en Miraflores
+    - generic [ref=e173]:
+      - generic [ref=e174]:
+        - paragraph [ref=e175]: Souvenirs con alma peruana
+        - heading "Llévate un pedacito del Perú." [level=2] [ref=e176]:
+          - text: Llévate un
+          - text: pedacito del Perú.
+        - paragraph [ref=e177]: "Souvenirs peruanos modernos, coloridos y llenos de significado. Detalles que no solo recuerdan un viaje: cuentan una historia de cultura, diseño y emoción."
+        - generic [ref=e178]:
+          - link "Ver souvenirs" [ref=e179] [cursor=pointer]:
+            - /url: "#mundos"
+          - link "Preguntar por WhatsApp" [ref=e180] [cursor=pointer]:
+            - /url: https://wa.me/51955993404
+        - paragraph [ref=e181]: Recavarren 324 · Miraflores · Lima
+      - img "Souvenirs peruanos modernos" [ref=e183]
+    - generic [ref=e185]:
+      - img "Regalos corporativos curados por Manna" [ref=e187]
+      - generic [ref=e188]:
+        - paragraph [ref=e189]: Empresas & eventos
+        - heading "Regalos corporativos con identidad." [level=2] [ref=e190]:
+          - text: Regalos corporativos
+          - text: con identidad.
+        - paragraph [ref=e191]: Sorprende a clientes, colaboradores e invitados con regalos curados, elegantes y llenos de significado. Preparamos propuestas especiales para empresas, fechas importantes y experiencias de bienvenida.
+        - list [ref=e192]:
+          - listitem [ref=e193]:
+            - generic [ref=e195]: Boxes corporativos
+          - listitem [ref=e196]:
+            - generic [ref=e198]: Souvenirs peruanos para eventos
+          - listitem [ref=e199]:
+            - generic [ref=e201]: Regalos para clientes
+          - listitem [ref=e202]:
+            - generic [ref=e204]: Detalles para colaboradores
+          - listitem [ref=e205]:
+            - generic [ref=e207]: Packs personalizados
+          - listitem [ref=e208]:
+            - generic [ref=e210]: Bienvenida para turistas e invitados
+        - link "Cotizar por WhatsApp" [ref=e211] [cursor=pointer]:
+          - /url: https://wa.me/51955993404?text=Hola%20Manna%2C%20quiero%20cotizar%20regalos%20corporativos
+    - generic [ref=e213]:
+      - generic [ref=e214]:
+        - paragraph [ref=e215]: Concept store en Miraflores
+        - heading "Un espacio para mirar, tocar y sorprenderse." [level=2] [ref=e216]
+      - generic [ref=e217]:
+        - img "Interior de la concept store Manna en Miraflores" [ref=e218]
+        - generic [ref=e219]:
+          - generic [ref=e220]:
+            - generic [ref=e221]:
+              - paragraph [ref=e222]: Dirección
+              - paragraph [ref=e223]:
+                - text: Recavarren 324
+                - text: Miraflores, Lima
+            - generic [ref=e224]:
+              - paragraph [ref=e225]: Contacto
+              - paragraph [ref=e226]: +51 955 993 404
+            - generic [ref=e227]:
+              - paragraph [ref=e228]: Horario
+              - generic [ref=e229]:
+                - paragraph [ref=e230]:
+                  - text: Lun – Sáb
+                  - text: 10:00 am — 8:00 pm
+                - paragraph [ref=e231]:
+                  - text: Domingo
+                  - text: 11:00 am — 6:00 pm
+          - iframe [ref=e233]
+          - generic [ref=e234]:
+            - link "Cómo llegar" [ref=e235] [cursor=pointer]:
+              - /url: https://www.google.com/maps?q=Recavarren+324,+Miraflores,+Lima
+            - link "Escribir por WhatsApp" [ref=e236] [cursor=pointer]:
+              - /url: https://wa.me/51955993404
+            - link "Ver Instagram" [ref=e237] [cursor=pointer]:
+              - /url: https://instagram.com/mannastoreperu
+    - generic [ref=e240]:
+      - generic [ref=e241]:
+        - paragraph [ref=e242]: Testimonios
+        - heading "Lo que dicen quienes encuentran su regalo en Manna." [level=2] [ref=e243]:
+          - text: Lo que dicen
+          - text: quienes encuentran su regalo en Manna.
+      - generic [ref=e244]:
+        - figure "— Andrea M." [ref=e245]:
+          - generic [ref=e246]: "\""
+          - blockquote [ref=e247]: Encontré el regalo perfecto y diferente que estaba buscando. La curaduría es impecable.
+          - generic [ref=e248]: — Andrea M.
+        - figure "— Rodrigo P." [ref=e249]:
+          - generic [ref=e250]: "\""
+          - blockquote [ref=e251]: Una tienda preciosa, llena de detalles únicos y cultura peruana. Mi favorita en Miraflores.
+          - generic [ref=e252]: — Rodrigo P.
+        - figure "— Camila R." [ref=e253]:
+          - generic [ref=e254]: "\""
+          - blockquote [ref=e255]: Me ayudaron a armar un regalo especial y quedó hermoso. Servicio increíble.
+          - generic [ref=e256]: — Camila R.
+        - figure "— Sofía L." [ref=e257]:
+          - generic [ref=e258]: "\""
+          - blockquote [ref=e259]: Perfecta para comprar souvenirs lindos. Me llevé un pedacito del Perú a casa.
+          - generic [ref=e260]: — Sofía L.
+    - generic [ref=e262]:
+      - generic [ref=e263]:
+        - paragraph [ref=e264]: ¿Cómo comprar en Manna?
+        - heading "Cinco pasos para regalar con alma." [level=2] [ref=e265]
+      - generic [ref=e266]:
+        - generic [ref=e267]:
+          - paragraph [ref=e268]: "01"
+          - paragraph [ref=e269]: Explora
+          - paragraph [ref=e270]: Recorre nuestras categorías y mundos Manna.
+        - generic [ref=e271]:
+          - paragraph [ref=e272]: "02"
+          - paragraph [ref=e273]: Elige
+          - paragraph [ref=e274]: Encuentra tu regalo, souvenir o detalle favorito.
+        - generic [ref=e275]:
+          - paragraph [ref=e276]: "03"
+          - paragraph [ref=e277]: Conversemos
+          - paragraph [ref=e278]: Escríbenos por WhatsApp si necesitas ayuda.
+        - generic [ref=e279]:
+          - paragraph [ref=e280]: "04"
+          - paragraph [ref=e281]: Compra
+          - paragraph [ref=e282]: Compra online o visítanos en Miraflores.
+        - generic [ref=e283]:
+          - paragraph [ref=e284]: "05"
+          - paragraph [ref=e285]: Sorprende
+          - paragraph [ref=e286]: Entrega un regalo con alma peruana.
+    - generic [ref=e288]:
+      - paragraph [ref=e289]: Haz que regalar sea inolvidable
+      - heading "Haz que tu próximo regalo tenga historia." [level=2] [ref=e290]:
+        - text: Haz que tu próximo regalo
+        - text: tenga historia.
+      - paragraph [ref=e291]: En Manna creemos que regalar es una forma de decir "pensé en ti". Por eso elegimos cada producto con cuidado, cariño y alma peruana.
+      - generic [ref=e292]:
+        - link "Pedir ayuda por WhatsApp" [ref=e293] [cursor=pointer]:
+          - /url: https://wa.me/51955993404
+        - link "Visítanos en Miraflores" [ref=e294] [cursor=pointer]:
+          - /url: "#visitanos"
+  - contentinfo [ref=e295]:
+    - generic [ref=e296]:
+      - generic [ref=e297]:
+        - paragraph [ref=e298]: Manna Store Perú
+        - paragraph [ref=e299]: Concept store peruana en Miraflores. Regalos, souvenirs, moda, decoración, bienestar y detalles únicos con alma peruana. Desde 2009.
+      - generic [ref=e300]:
+        - paragraph [ref=e301]: Tienda
+        - list [ref=e302]:
+          - listitem [ref=e303]:
+            - link "Mundos Manna" [ref=e304] [cursor=pointer]:
+              - /url: "#mundos"
+          - listitem [ref=e305]:
+            - link "Souvenirs" [ref=e306] [cursor=pointer]:
+              - /url: "#souvenirs"
+          - listitem [ref=e307]:
+            - link "Corporativo" [ref=e308] [cursor=pointer]:
+              - /url: "#corporativo"
+          - listitem [ref=e309]:
+            - link "Regalo ideal" [ref=e310] [cursor=pointer]:
+              - /url: "#quiz"
+      - generic [ref=e311]:
+        - paragraph [ref=e312]: Contacto
+        - list [ref=e313]:
+          - listitem [ref=e314]: Recavarren 324, Miraflores
+          - listitem [ref=e315]: Lima, Perú
+          - listitem [ref=e316]:
+            - link "+51 955 993 404" [ref=e317] [cursor=pointer]:
+              - /url: https://wa.me/51955993404
+          - listitem [ref=e318]:
+            - link "@mannastoreperu" [ref=e319] [cursor=pointer]:
+              - /url: https://instagram.com/mannastoreperu
+    - generic [ref=e320]:
+      - generic [ref=e321]: © 2026 Manna Store Perú
+      - generic [ref=e322]: Regalos con mucho amor
+  - link "Escríbenos por WhatsApp" [ref=e323] [cursor=pointer]:
+    - /url: https://wa.me/51955993404?text=Hola%20Manna%2C%20me%20gustar%C3%ADa%20m%C3%A1s%20informaci%C3%B3n
+    - img [ref=e326]
+    - generic [ref=e328]: ¿Te ayudo a elegir?
