@@ -1,12 +1,52 @@
 const emotions = [
-  { label: "Quiero agradecer", tone: "bg-rosado/25 hover:bg-rosado/45", accent: "text-primary", wa: "Hola Manna, busco un regalo para agradecer a alguien especial. ¿Me pueden ayudar?" },
-  { label: "Quiero sorprender", tone: "bg-oro/15 hover:bg-oro/30", accent: "text-oro", wa: "Hola Manna, quiero sorprender a alguien con un regalo especial. ¿Qué me recomiendan?" },
-  { label: "Quiero celebrar", tone: "bg-salvia/15 hover:bg-salvia/30", accent: "text-salvia", wa: "Hola Manna, busco un regalo para celebrar una ocasión especial. ¿Qué opciones tienen?" },
-  { label: "Quiero enamorar", tone: "bg-primary/10 hover:bg-primary/20", accent: "text-primary", wa: "Hola Manna, quiero un regalo romántico para enamorar a alguien. ¿Me pueden ayudar?" },
-  { label: "Llevarme un recuerdo del Perú", tone: "bg-cacao/10 hover:bg-cacao/20", accent: "text-cacao", wa: "Hola Manna, busco souvenirs o recuerdos peruanos para llevarme. ¿Qué tienen disponible?" },
-  { label: "Decorar mi espacio", tone: "bg-hueso hover:bg-rosado/25", accent: "text-cacao", wa: "Hola Manna, busco artículos únicos para decorar mi espacio. ¿Qué me recomiendan?" },
-  { label: "Cuidar a alguien", tone: "bg-salvia/15 hover:bg-salvia/30", accent: "text-salvia", wa: "Hola Manna, quiero un regalo de bienestar para cuidar a alguien especial. ¿Qué tienen?" },
-  { label: "Regalar algo único", tone: "bg-primary/10 hover:bg-primary/20", accent: "text-primary", wa: "Hola Manna, busco algo verdaderamente único para regalar. ¿Qué me pueden mostrar?" },
+  {
+    label: "Quiero agradecer",
+    emoji: "🌸",
+    sub: "Detalles que dicen gracias de verdad",
+    wa: "Hola Manna, busco un regalo para agradecer a alguien especial. ¿Me pueden ayudar?",
+  },
+  {
+    label: "Quiero sorprender",
+    emoji: "✨",
+    sub: "Algo que no esperaba para nada",
+    wa: "Hola Manna, quiero sorprender a alguien con un regalo especial. ¿Qué me recomiendan?",
+  },
+  {
+    label: "Quiero celebrar",
+    emoji: "🎉",
+    sub: "Cumpleaños, logros y momentos felices",
+    wa: "Hola Manna, busco un regalo para celebrar una ocasión especial. ¿Qué opciones tienen?",
+  },
+  {
+    label: "Quiero enamorar",
+    emoji: "💛",
+    sub: "Romántico, delicado y con alma",
+    wa: "Hola Manna, quiero un regalo romántico para enamorar a alguien. ¿Me pueden ayudar?",
+  },
+  {
+    label: "Llevar el Perú conmigo",
+    emoji: "🇵🇪",
+    sub: "Souvenirs con identidad y cultura",
+    wa: "Hola Manna, busco souvenirs o recuerdos peruanos para llevarme. ¿Qué tienen disponible?",
+  },
+  {
+    label: "Decorar mi espacio",
+    emoji: "🏡",
+    sub: "Objetos únicos que cuentan historias",
+    wa: "Hola Manna, busco artículos únicos para decorar mi espacio. ¿Qué me recomiendan?",
+  },
+  {
+    label: "Cuidar a alguien",
+    emoji: "🌿",
+    sub: "Bienestar, aromas y pequeños rituales",
+    wa: "Hola Manna, quiero un regalo de bienestar para cuidar a alguien especial. ¿Qué tienen?",
+  },
+  {
+    label: "Regalar algo único",
+    emoji: "🎁",
+    sub: "Lo que no encuentras en ningún otro lugar",
+    wa: "Hola Manna, busco algo verdaderamente único para regalar. ¿Qué me pueden mostrar?",
+  },
 ];
 
 export function Emotion() {
@@ -30,14 +70,22 @@ export function Emotion() {
               href={`https://wa.me/51955993404?text=${encodeURIComponent(e.wa)}`}
               target="_blank"
               rel="noopener noreferrer"
-              className={`group px-6 py-10 rounded-3xl text-left transition-colors ${e.tone}`}
+              className="group relative overflow-hidden rounded-2xl border border-white/8 bg-white/5 p-6 text-left transition-all duration-300 hover:border-primary/40 hover:bg-white/10 hover:shadow-lg hover:shadow-primary/10 hover:-translate-y-1"
             >
-              <span className={`block font-display italic text-2xl leading-tight mb-4 ${e.accent}`}>
+              <div className="mb-4 text-3xl">{e.emoji}</div>
+              <p className="font-display italic text-xl leading-tight text-foreground mb-2">
                 {e.label}
+              </p>
+              <p className="text-[11px] text-muted-foreground leading-relaxed mb-5">
+                {e.sub}
+              </p>
+              <span className="inline-flex items-center gap-1.5 text-[10px] font-mono uppercase tracking-[0.25em] text-primary opacity-60 group-hover:opacity-100 transition-opacity">
+                Ver selección
+                <span className="group-hover:translate-x-1 transition-transform inline-block">→</span>
               </span>
-              <span className="text-[10px] font-mono uppercase tracking-[0.25em] opacity-50 group-hover:opacity-100 transition-opacity">
-                Ver selección →
-              </span>
+              <div className="absolute inset-0 rounded-2xl opacity-0 group-hover:opacity-100 transition-opacity pointer-events-none"
+                style={{ background: "radial-gradient(circle at 80% 20%, rgba(201,168,76,0.06) 0%, transparent 60%)" }}
+              />
             </a>
           ))}
         </div>
