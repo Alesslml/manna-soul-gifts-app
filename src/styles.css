@@ -47,6 +47,23 @@
   --ease-out-expo: cubic-bezier(0.19, 1, 0.22, 1);
 }
 
+.anim-fade-up {
+  opacity: 0;
+  transform: translateY(28px);
+  transition: opacity 0.7s var(--ease-out-expo), transform 0.7s var(--ease-out-expo);
+}
+
+.anim-fade-in {
+  opacity: 0;
+  transition: opacity 0.9s ease;
+}
+
+.anim-fade-up.is-visible,
+.anim-fade-in.is-visible {
+  opacity: 1;
+  transform: translateY(0);
+}
+
 :root {
   --radius: 0.75rem;
 

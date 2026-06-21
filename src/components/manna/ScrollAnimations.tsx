@@ -1,11 +1,4 @@
-"use client";
-import { useRef, type ReactNode } from "react";
-import {
-  motion,
-  useScroll,
-  useTransform,
-  useInView,
-} from "framer-motion";
+import { useEffect, useRef, type ReactNode } from "react";
 
 export function FadeUp({
   children,
@@ -16,19 +9,29 @@ export function FadeUp({
   delay?: number;
   className?: string;
 }) {
-  const ref = useRef(null);
-  const inView = useInView(ref, { once: true, margin: "-80px" });
+  const ref = useRef<HTMLDivElement>(null);
+
+  useEffect(() => {
+    const el = ref.current;
+    if (!el) return;
+    const observer = new IntersectionObserver(
+      ([entry]) => {
+        if (entry.isIntersecting) {
+          el.style.transitionDelay = `${delay}s`;
+          el.classList.add("is-visible");
+          observer.disconnect();
+        }
+      },
+      { rootMargin: "-60px" }
+    );
+    observer.observe(el);
+    return () => observer.disconnect();
+  }, [delay]);
 
   return (
-    <motion.div
-      ref={ref}
-      className={className}
-      initial={{ opacity: 0, y: 32 }}
-      animate={inView ? { opacity: 1, y: 0 } : {}}
-      transition={{ duration: 0.7, delay, ease: [0.25, 0.46, 0.45, 0.94] }}
-    >
+    <div ref={ref} className={`anim-fade-up ${className}`}>
       {children}
-    </motion.div>
+    </div>
   );
 }
 
@@ -41,19 +44,29 @@ export function FadeIn({
   delay?: number;
   className?: string;
 }) {
-  const ref = useRef(null);
-  const inView = useInView(ref, { once: true, margin: "-60px" });
+  const ref = useRef<HTMLDivElement>(null);
+
+  useEffect(() => {
+    const el = ref.current;
+    if (!el) return;
+    const observer = new IntersectionObserver(
+      ([entry]) => {
+        if (entry.isIntersecting) {
+          el.style.transitionDelay = `${delay}s`;
+          el.classList.add("is-visible");
+          observer.disconnect();
+        }
+      },
+      { rootMargin: "-40px" }
+    );
+    observer.observe(el);
+    return () => observer.disconnect();
+  }, [delay]);
 
   return (
-    <motion.div
-      ref={ref}
-      className={className}
-      initial={{ opacity: 0 }}
-      animate={inView ? { opacity: 1 } : {}}
-      transition={{ duration: 0.9, delay, ease: "easeOut" }}
-    >
+    <div ref={ref} className={`anim-fade-in ${className}`}>
       {children}
-    </motion.div>
+    </div>
   );
 }
 
@@ -64,22 +77,32 @@ export function StaggerChildren({
   children: ReactNode;
   className?: string;
 }) {
-  const ref = useRef(null);
-  const inView = useInView(ref, { once: true, margin: "-60px" });
+  const ref = useRef<HTMLDivElement>(null);
+
+  useEffect(() => {
+    const el = ref.current;
+    if (!el) return;
+    const observer = new IntersectionObserver(
+      ([entry]) => {
+        if (entry.isIntersecting) {
+          const items = el.querySelectorAll<HTMLElement>(".stagger-item");
+          items.forEach((item, i) => {
+            item.style.transitionDelay = `${i * 0.08}s`;
+            item.classList.add("is-visible");
+          });
+          observer.disconnect();
+        }
+      },
+      { rootMargin: "-40px" }
+    );
+    observer.observe(el);
+    return () => observer.disconnect();
+  }, []);
 
   return (
-    <motion.div
-      ref={ref}
-      className={className}
-      initial="hidden"
-      animate={inView ? "visible" : "hidden"}
-      variants={{
-        visible: { transition: { staggerChildren: 0.08 } },
-        hidden: {},
-      }}
-    >
+    <div ref={ref} className={className}>
       {children}
-    </motion.div>
+    </div>
   );
 }
 
@@ -91,15 +114,9 @@ export function StaggerItem({
   className?: string;
 }) {
   return (
-    <motion.div
-      className={className}
-      variants={{
-        hidden: { opacity: 0, y: 24 },
-        visible: { opacity: 1, y: 0, transition: { duration: 0.6, ease: [0.25, 0.46, 0.45, 0.94] } },
-      }}
-    >
+    <div className={`stagger-item anim-fade-up ${className}`}>
       {children}
-    </motion.div>
+    </div>
   );
 }
 
@@ -107,7 +124,7 @@ export function ParallaxImage({
   src,
   alt,
   className = "",
-  speed = 0.15,
+  speed = 0.12,
   loading,
 }: {
   src: string;
@@ -116,20 +133,41 @@ export function ParallaxImage({
   speed?: number;
   loading?: "lazy" | "eager";
 }) {
-  const ref = useRef(null);
-  const { scrollYProgress } = useScroll({
-    target: ref,
-    offset: ["start end", "end start"],
-  });
-  const y = useTransform(scrollYProgress, [0, 1], ["-10%", "10%"]);
+  const ref = useRef<HTMLDivElement>(null);
+  const imgRef = useRef<HTMLImageElement>(null);
+
+  useEffect(() => {
+    const container = ref.current;
+    const img = imgRef.current;
+    if (!container || !img) return;
+
+    let raf = 0;
+
+    const onScroll = () => {
+      cancelAnimationFrame(raf);
+      raf = requestAnimationFrame(() => {
+        const rect = container.getBoundingClientRect();
+        const centerY = rect.top + rect.height / 2 - window.innerHeight / 2;
+        img.style.transform = `translateY(${centerY * speed}px) scale(1.2)`;
+      });
+    };
+
+    window.addEventListener("scroll", onScroll, { passive: true });
+    onScroll();
+    return () => {
+      window.removeEventListener("scroll", onScroll);
+      cancelAnimationFrame(raf);
+    };
+  }, [speed]);
 
   return (
     <div ref={ref} className={`overflow-hidden ${className}`}>
-      <motion.img
+      <img
+        ref={imgRef}
         src={src}
         alt={alt}
         loading={loading}
-        style={{ y, scale: 1.2 }}
+        style={{ willChange: "transform", scale: "1.2" }}
         className="w-full h-full object-cover"
       />
     </div>
